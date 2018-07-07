@@ -30,7 +30,7 @@ $(document).ready(() => {
 		}
 	});
 
-	$(document).keypress(function(e) {
+	$(document).keypress(e => {
 		//highlight pressed key
 		let key = $('#' + e.which);
 		$(key).css({ backgroundColor: getRandomColor() });
